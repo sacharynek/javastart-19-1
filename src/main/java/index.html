@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form method="post" autocomplete="off">
+  <fieldset>
+    <legend id="formTitle">Rejestracja</legend>
+    <div class="form-group">
+      <label for="fname">Imię</label>
+      <input type="text" id="fname" maxlength="20" minlength="2" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="lname">Nazwisko</label>
+      <input type="text" id="lname" maxlength="20" minlength="2" class="form-control"/>
+    </div>
+    <fieldset class="form-group">
+      <div class="row">
+        <legend class="col-form-label col-sm-2 pt-0">Płeć</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input type="radio" name="sex" value="female" id="female" class="form-check-input" checked/>
+            <label for="female" class="form-check-label">Kobieta</label>
+          </div>
+          <div class="form-check">
+            <input type="radio" name="sex" value="male" id="male" class="form-check-input"/>
+            <label for="male" class="form-check-label">Mężczyzna</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="form-group">
+      <label for="email">Adres email</label>
+      <input type="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" class="form-control"/>
+    </div>
+    <div class="form-group">
+      <label for="password">Hasło</label>
+      <input type="password" id="password" minlength="8" class="form-control"/>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="city">Miasto</label>
+        <input type="text" id="city" minlength="1" class="form-control"/>
+      </div>
+      <div class="form-group col-md-4">
+        <label for="voivodship">Województwo</label>
+        <select name="City" id="voivodship" class="form-control" >
+          <option value="" disabled selected>Wybierz...</option>
+          <option value="podlasia">podlaskie</option>
+          <option value="lowersilesia">dolnośląskie</option>
+          <option value="masovia">mazowieckie</option>
+          <option value="lublinia">lubelskie</option>
+          <option value="subkarpatia">podkarpackie</option>
+          <option value="lubuskie">lubuskie</option>
+          <option value="warmian-masurian">warmińsko-mazurskie</option>
+          <option value="kuyawian-pomeranian">kujawsko-pomorskie</option>
+          <option value="pomeranian">pomorskie</option>
+          <option value="westpomeranian">zachodniopomorskie</option>
+          <option value="bidaznedza">łódzkie</option>
+          <option value="greaterpoland">wielkopolskie</option>
+          <option value="pizdziszewo">świętokrzyskie</option>
+          <option value="silesian">śląskie</option>
+          <option value="lesserpoland">małopolskie</option>
+          <option value="opole">opolskie</option>
+        </select>
+      </div>
+      <div class="form-group col-md-2">
+        <label for="zipcode">Kod pocztowy </label>
+        <input type="text" id="zipcode" pattern="^\d{2}-\d{3}$" title="Format xx-xxx" placeholder="kod-pocztowy" class="form-control"/>
+      </div>
+    </div>
+    <div class="custom-control custom-checkbox mr-sm-2">
+      <input type="checkbox" id="regulation" class="custom-control-input"/>
+      <label for="regulation" class="custom-control-label">
+        Akceptuję
+        <a href="https://www.onet.pl">
+          regulamin
+        </a>
+      </label>
+    </div>
+    <div class="custom-control custom-checkbox mr-sm-2">
+      <input type="checkbox" id="marketing" class="custom-control-input" checked/>
+      <label for="marketing" class="custom-control-label">
+        Wyrażam zgodę na otrzymywanie informacji marketingowych
+      </label>
+    </div>
+    <p>
+      <button type="button" class="btn btn-primary">Rejestruj</button>
+    </p>
+  </fieldset>
+</form>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

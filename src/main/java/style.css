@@ -1,0 +1,9 @@
+form {
+    margin: 20px;
+    padding: 20px;
+}
+
+#formTitle {
+    font-size: 200%;
+    font-weight: bold;
+}
